@@ -8,3 +8,4 @@ if idade >= 18 and idade < 70:
  print('Você tem',idade,'anos logo pode votar!')
 if idade < 16:
  print('Você tem',idade,'anos logo não pode votar!')
+ 
