@@ -10,7 +10,6 @@ if idade >= 18:
     print('Vá de bus')
 else:
     print("Beba leite e ande de bike")
-
  
 
 '''
