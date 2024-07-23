@@ -18,7 +18,7 @@ if L1 > soma1 or L1 > soma2 or L3 < soma3:
             print('triângulo')
         else:
             print('não triângulo')
-     
+
 '''Forma 2:'''
 
 L1 = int(input('Digite o lado 1 do triângulo: '))
