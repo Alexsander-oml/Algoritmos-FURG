@@ -108,7 +108,20 @@ else:
     print('Os lados não formam um triângulo.')
 
 
+'''4) Crie um programa em Python que leia as notas do estudante nos 4 bimestres da nossa disciplina e a frequência (em porcentagem). A seguir informe se o estudante passou por média, rodou ou ficou em exame. Para passar por média, o estudante deve ter média maior ou igual a 7. Estudante com média abaixo de 3 roda sem ao menos fazer o exame. O estudante que tiver menos de 75% de frequência também está rodado na disciplina.'''
 
+N1 = int(input('Digite a nota 1: '))
+N2 = int(input('Digite a nota 2: '))
+N3 = int(input('Digite a nota 3: '))
+N4 = int(input('Digite a nota 4: '))
+F = int(input('Frequência em porcentagem: ')
+M = (N1 + N2 + N3 + N4/4)
+if M >= 7 and F >= 75:
+  print('Estudante aprovado!')
+if M < 3 or F <= 75:
+  print('Estudante reprovado!')
+if M >= 3 and M <= 7 or F <= 75:
+  print('Estudante reprovado!')  
 
 
 
