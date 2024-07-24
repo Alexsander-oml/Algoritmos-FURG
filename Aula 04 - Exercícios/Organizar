@@ -1,0 +1,85 @@
+'''1. Faça um programa que, ao receber os valores da largura e do comprimento de uma figura geométrica, mostre se esta é um quadrado ou apenas um retângulo. Caso um valor seja menor ou igual a zero, deve-se mostrar um erro.
+ 
+ 
+ 
+L = float(input("Digite a Largura:  "))
+while (L <= 0):
+ print('Valor inválido, digite um válido')
+ L = float(input("Digite a Largura:  "))
+C = float(input("Digite o comprimento: "))
+while (C <= 0):
+ print('Valor inválido, digite um válido')
+ C = float(input("Digite o comprimento: "))
+if L == C:
+  print(f'A figura é um quadrado\nLargura: {L}\nComprimento{C}')
+else:
+  print(f'A figura é um retângulo\nLargura: {L}\nComprimento {C}')
+ 
+'''
+
+'''2) Faça um programa em python que pergunte ao usuário o seguinte:
+
+    A viagem custará menos de R$ 30?
+    Terá Wifi?
+    Terá piscina?
+    Terá churrasqueira?
+
+        O programa deverá mostrar se a viagem ocorrerá de acordo com as seguintes regras:
+
+    Deverá custar menos de R$ 30
+    Tem que ter wifi e piscina
+    Se não tiver wifi ou piscina, tem que ter churrasqueira
+
+'''
+
+
+
+Valor = input('A viagem custará menos de R$ 30?')
+Wifi = input('A viagem terá Wifi?')
+Piscina = input('A viagem terá piscina?')
+Churras = input('A viagem terá churrasqueira?')
+if Valor == 'sim':
+  if Wifi == 'sim' or Piscina == 'sim' and Churras == 'sim':
+     print('A viagem ocorrerá')
+  if Valor != 'sim' and Wifi != 'sim' or Piscina != 'sim' and Churras != 'sim':
+    print('A viagem não ocorrerá')
+else:
+ print('A viagem não ocorrerá')
+
+
+'''
+3) Construa um programa em python que, informadas três medidas a, b e c pelo usuário, verifique se elas podem ser lados de um triângulo. Se não puderem ser, primeiramente o algoritmo deve informar isso. Se for possível serem lados de triângulo, deve dizer qual tipo de triângulo pode ser construído com essas medidas (isósceles, escaleno ou equilátero). A condição para formar um triângulo: comprimento do maior segmento seja inferior à soma dos comprimentos dos dois menores. 
+'''
+
+
+
+
+
+
+
+
+
+
+
+'''
+D = int(input("Digite o dia:  "))
+M = int(input("Digite o mês: "))
+A = int(input("Digite o ano: "))
+
+bissexto = A % 4 == 0 and (A % 100 != 0 or A % 400 == 0)
+
+if M >= 1 and M <= 12:
+    if M == 2 and bissexto == True:
+        maxD = 29
+    if M == 2 and bissexto != True:
+        maxD = 28
+    if M == 4 or M == 6 or M == 9 or M == 11:
+        maxD = 30
+    if M == 1 or M == 3 or M == 5 or M == 7 or M == 9 or M == 10 or M == 12:
+        maxD = 31
+
+if D >= 1 and D <= maxD:
+    print(f"A data {D}/{M}/{A} é valida")
+else:
+    print(f"A data {D}/{M}/{A} não é valida")
+'''
