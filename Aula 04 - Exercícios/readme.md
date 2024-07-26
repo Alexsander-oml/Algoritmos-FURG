@@ -1,6 +1,6 @@
 # Algoritmos Python - FURG 🚀
 
-## Semana 04 - 23/07/2024
+## Semana 04 - 24/07/2024
 
 ### Atividade 1: Identificar se a figura é um quadrado ou retângulo
 
