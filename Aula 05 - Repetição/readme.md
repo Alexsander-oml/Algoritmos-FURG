@@ -1,6 +1,6 @@
 # Algoritmos Python - FURG 🚀
 
-# Repetiçao
+# Repetição
 
 ## Semana 05 - 26/07/2024
 
