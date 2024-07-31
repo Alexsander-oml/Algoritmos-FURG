@@ -41,6 +41,15 @@ while C <= N:
     C += 1
 print()
 
+# Escadinha
+
+alt = int(input('Altura da escadinha'))
+tijolo = input('Do que a escadinha será feita')
+C = 1
+while C <= alt:
+  print(C*tijolo)
+  C += 1
+
 # Programa 6: Calcula e mostra a soma dos números de 1 a N
 N = int(input("Digite um valor para N: "))
 soma = 0
