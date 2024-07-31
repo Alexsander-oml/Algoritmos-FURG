@@ -50,6 +50,14 @@ while C <= alt:
   print(C*tijolo)
   C += 1
 
+# Multiplicando Mario
+N = int(input("Digite o número de degraus: "))
+
+cont = 1
+while cont <= N:
+    print(f"{cont} " * cont)
+    cont = cont + 1
+
 # Programa 6: Calcula e mostra a soma dos números de 1 a N
 N = int(input("Digite um valor para N: "))
 soma = 0
