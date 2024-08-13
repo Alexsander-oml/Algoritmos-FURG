@@ -7,6 +7,7 @@ cont = 1
 espaco = " "
 desloc = altura - 1
 
+
 while andar <= altura:
     cont2 = 0
     espaco_montado = ""
