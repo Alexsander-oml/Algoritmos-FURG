@@ -11,66 +11,52 @@ Este documento fornece uma lista abrangente de métodos para manipulação de st
   "texto".upper()  # 'TEXTO'
 str.lower(): Converte todos os caracteres da string para minúsculas.
 
-python
-Copiar código
+
 "TEXTO".lower()  # 'texto'
 str.title(): Converte a primeira letra de cada palavra em maiúscula.
 
-python
-Copiar código
+
 "texto de exemplo".title()  # 'Texto De Exemplo'
 str.capitalize(): Converte a primeira letra da string para maiúscula e o restante para minúsculas.
 
-python
-Copiar código
+
 "texto".capitalize()  # 'Texto'
 Manipulação de Espaços
 str.strip([chars]): Remove espaços em branco (ou caracteres específicos) do início e do fim da string.
 
-python
-Copiar código
+
 "  texto  ".strip()  # 'texto'
 str.lstrip([chars]): Remove espaços em branco (ou caracteres específicos) do início da string.
 
-python
-Copiar código
+
 "  texto  ".lstrip()  # 'texto  '
 str.rstrip([chars]): Remove espaços em branco (ou caracteres específicos) do fim da string.
 
-python
-Copiar código
+
 "  texto  ".rstrip()  # '  texto'
 Substituição e Localização
 str.replace(old, new[, count]): Substitui todas (ou as primeiras count ocorrências de) instâncias de uma substring por outra.
 
-python
-Copiar código
+
 "texto velho".replace("velho", "novo")  # 'texto novo'
 str.find(sub[, start[, end]]): Retorna o menor índice onde a substring sub é encontrada. Retorna -1 se não encontrado.
 
-python
-Copiar código
 "texto".find("e")  # 1
 str.rfind(sub[, start[, end]]): Retorna o maior índice onde a substring sub é encontrada. Retorna -1 se não encontrado.
 
-python
-Copiar código
 "texto texto".rfind("e")  # 6
 str.index(sub[, start[, end]]): Retorna o menor índice onde a substring sub é encontrada. Levanta uma exceção ValueError se não encontrado.
 
-python
-Copiar código
+
 "texto".index("e")  # 1
 str.rindex(sub[, start[, end]]): Retorna o maior índice onde a substring sub é encontrada. Levanta uma exceção ValueError se não encontrado.
 
-python
-Copiar código
+
 "texto texto".rindex("e")  # 6
 Divisão e Junção
 str.split([sep[, maxsplit]]): Divide a string em uma lista de substrings usando o delimitador sep. Se maxsplit for especificado, divide em no máximo maxsplit partes.
 
-python
-Copiar código
+
 "texto de exemplo".split()  # ['texto', 'de', 'exemplo']
 str.rsplit([sep[, maxsplit]]): Divide a string em uma lista de substrings usando o delimitador sep, mas começa a dividir a partir do fim da string.
 
