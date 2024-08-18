@@ -12,7 +12,6 @@ while C < len(N):
         pala = '' 
     C += 1
 
-
 esp = esp + pala
 
 print(esp)
