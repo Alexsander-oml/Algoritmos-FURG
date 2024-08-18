@@ -141,4 +141,7 @@ Verificação de Substrings: Se in não estiver disponível, você pode usar o m
 
 
 if "sub" in "string":  # Com 'in'
-    print("
+    print("Substrings found")
+
+if "string".find("sub") != -1:  # Sem 'in'
+    print("Substrings found")
