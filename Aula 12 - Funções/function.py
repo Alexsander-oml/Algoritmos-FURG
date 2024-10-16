@@ -1,4 +1,3 @@
-"""
 def dobro(num):
   saida = num * 2
   return saida
@@ -26,9 +25,7 @@ num = int(input('Digite o número: '))
 duplo = dobro(num)
 print(duplo)
 
-"""
 
-'''
 def tabuada(num):
     saida = ""
     for i in range(11):
@@ -41,4 +38,16 @@ for i in range(11):
     print(f"Tabuada do {i}")
     print(tabuada(i))
     print("--------------------------")
-'''
+
+def primo(num):
+  cont = 2
+  while cont < num:
+    if num % cont == 0:
+      return False
+    cont = cont + 1
+  return True
+
+for i in range(100, 200):
+  if primo(i):
+    print(i)
+    
