@@ -22,7 +22,7 @@ while True:
      
      for bolinha in bolinhas:
           dx = abs(bolinha.getCenter().getX() - onde_cliquei.getX()) # diferença entre os pontos e  o centro da bolinha
-          dy = abs(bolinha.getCenter().getY() - onde_cliquei.getY()) # ||
+          dy = abs(bolinha.getCenter().getY() - onde_cliquei.getY()) # getCenter pega o centro da bolinha do getY e getX 
           d = mt.sqrt(dx * dx + dy * dy) # teorema de pitágoras
           if d <= radius:   # se a distância for menor ou igual ao raio do círculo
                 win.close()
