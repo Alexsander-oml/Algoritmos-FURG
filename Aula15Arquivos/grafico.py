@@ -14,7 +14,7 @@ c.draw(win)  # fala em qual janela o ponto deve ser draw
 cores = ['red', 'blue', 'green', 'orange', 'yellow', 'black', 'pink']
 
 bolinhas = [c]  # lista para armazenar todas as bolinhas e o ponto
-radius = 10 # raio do círculo que eh 10 pq o círculo tem 10 de raio
+raio = 10 # raio do círculo que eh 10 pq o círculo tem 10 de raio
 
 while True:
      onde_cliquei = win.getMouse() # pega o ponto onde foi clicado
@@ -24,7 +24,7 @@ while True:
           dx = abs(bolinha.getCenter().getX() - onde_cliquei.getX()) # diferença entre os pontos e  o centro da bolinha
           dy = abs(bolinha.getCenter().getY() - onde_cliquei.getY()) # getCenter pega o centro da bolinha do getY e getX 
           d = mt.sqrt(dx * dx + dy * dy) # teorema de pitágoras
-          if d <= radius:   # se a distância for menor ou igual ao raio do círculo
+          if d <= raio:   # se a distância for menor ou igual ao raio do círculo
                 win.close()
                 print("Fim do Programa")
                 exit() # fecha o programa
