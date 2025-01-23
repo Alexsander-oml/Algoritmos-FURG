@@ -1,0 +1,3 @@
+Este é um exemplo de texto para análise.
+Ele contém várias linhas, palavras e caracteres.
+Este texto será usado para contar o número de linhas, palavras e caracteres (excluindo espaços).

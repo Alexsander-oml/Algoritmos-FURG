@@ -1,0 +1,2 @@
+Este é um exemplo de texto que será usado para contar o número de palavras.
+Pode conter várias linhas e diferentes tipos de caracteres.
