@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatísticas de Cursos</title>
+</head>
+<body>
+    <h1>Estatísticas de Cursos</h1>
+    <pre id="output"></pre>
+
+    <script>
+        function calcularEstatisticas(cursos) {
+            let totalCandidatos = 0;
+            let maiorCandidatosPorVaga = 0;
+            let codigoMaiorCandidatosPorVaga = 0;
+            let output = '';
+
+            cursos.forEach(curso => {
+                let totalCandidatosCurso = curso.masculino + curso.feminino;
+                let candidatosPorVaga = totalCandidatosCurso / curso.vagas;
+                let porcentagemFeminino = (curso.feminino / totalCandidatosCurso) * 100;
+
+                output += `Curso: ${curso.nome}, Código: ${curso.codigo}\n`;
+                output += `Candidatos por vaga: ${candidatosPorVaga.toFixed(2)}\n`;
+                output += `Porcentagem de candidatas do sexo feminino: ${porcentagemFeminino.toFixed(2)}%\n\n`;
+
+                if (candidatosPorVaga > maiorCandidatosPorVaga) {
+                    maiorCandidatosPorVaga = candidatosPorVaga;
+                    codigoMaiorCandidatosPorVaga = curso.codigo;
+                }
+
+                totalCandidatos += totalCandidatosCurso;
+            });
+
+            output += `Maior número de candidatos por vaga: ${maiorCandidatosPorVaga.toFixed(2)}, Código do curso: ${codigoMaiorCandidatosPorVaga}\n`;
+            output += `Total de candidatos: ${totalCandidatos}`;
+
+            document.getElementById('output').textContent = output;
+        }
+
+        const cursos = [
+            { nome: "Engenharia", codigo: 101, vagas: 50, masculino: 80, feminino: 20 },
+            { nome: "Medicina", codigo: 102, vagas: 30, masculino: 40, feminino: 60 },
+            { nome: "Direito", codigo: 103, vagas: 40, masculino: 30, feminino: 70 },
+        ];
+
+        calcularEstatisticas(cursos);
+    </script>
+</body>
+</html>

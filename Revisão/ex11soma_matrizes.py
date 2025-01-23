@@ -4,7 +4,7 @@
 
 def soma_matriz(m1, m2):
     if len(m1) != len(m2):
-        raise ValueError("As matrizes devem ter as mesmas dimensões")
+        raise ValueError("As matrizes devem ter as mesmas dimensões") # raise é uma palavra-chave que lança uma exceção
     
    
     m3 = []
@@ -15,9 +15,6 @@ def soma_matriz(m1, m2):
         m3.append(linha)
 
     return m3
-
-
-
 
 
 # Exemplo de uso:
